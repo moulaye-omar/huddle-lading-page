@@ -1,10 +1,5 @@
 # Huddle landing page
 
-## Expérience :
-
-
-
-
 
 ## Spécification:
 
