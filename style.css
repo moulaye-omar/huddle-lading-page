@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+}
+/* Prémière section Dashboard */
+.entete{
+    padding: 2% 3%;
+    background: rgba(255, 192, 203, 0.2);
+    background-image: url(bg-hero-desktop.svg);
+    min-height: 100vh;
+}
+button{
+    font-size: 1.1em;
+    font-weight: 700;
+}
+h1{
+    font-size: 3em;
+    font-weight: 600 ;
+}
+h2{
+    font-size:  2.2em ;
+    font-weight: 600 ;
+}
+.entete header{
+    justify-content: space-between;
+}
+.entete header button{
+    padding: 2px 40px;
+    border-radius: 20px;
+    border: none;
+    background: white;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.6) ;
+    cursor: pointer;
+}
+.flexible{
+    display: flex;
+}
+.dashboard{
+    height: 94vh;
+    align-items: center;
+    /* display: flex; */
+}
+.dashboard div:first-child h1{
+    font-size: 6em;
+    text-transform: capitalize;
+}
+.dashboard div:first-child p{
+    color: rgba(34, 34, 34, 0.876);
+    font-size: 2.4rem;
+}
+.dashboard div{
+    flex: 1;
+}
+.dashboard div:first-child *{
+    margin-top: 50px;
+}
+.dashboard div img{
+    float: right;
+    width: 90%;
+}
+.dashboard div button{
+    padding: 20px 60px;
+    border-radius: 50px;
+    color: white;
+    background: hsl(322, 100%, 66%);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.dashboard div button:hover{
+    background: hsl(324, 90%, 76%);
+}
+/* deuxième section Communauté */
+.communaute > div{
+    margin: 4%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.456);
+    border-radius: 10px;
+}
+.communaute > div > div{
+    flex: 1;
+    margin: auto 5%;
+    font-size: 2rem;
+}
+.communaute img{
+    width: 70%;
+    margin: 5% 20%;
+}
+.communaute p {
+    margin-top: 3%;
+    color: hsl(208, 11%, 55%);
+}
+/* Third section */
+.ready{
+    width: 55%;
+    min-width: 300px;
+    background: white;
+    text-align: center;
+    padding: 2% 2% 5%;
+    border-radius: 50px;
+    justify-self: center;
+    transform: translateY(50%);
+}
+.ready button{
+    padding: 2% 8%;
+    min-width: 190px;
+    background: hsl(322, 100%, 66%);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    margin-top: 5%;
+}
+.ready button:hover{
+    background: hsl(324, 90%, 76%);
+}
+/* footer last section */
+footer{
+    background: hsl(192, 100%, 9%);
+    color: white;
+    font-size: 20px;
+}
+footer .flexible > div{
+    flex: 1;
+}
+.info-entreprise{
+    display: flex;
+    margin-left: 3%;
+}
+.info-entreprise > *{
+    flex: 1;
+    margin: 20% 2% 5% 2%;
+}
+.info-entreprise img{
+    max-width: 200px;
+}
+.info-entreprise li{
+    list-style: none;
+    margin-bottom: 25px;
+}
+.info-entreprise a{
+    text-decoration: none;
+    color: white;
+}
+.info-entreprise a:hover{
+    text-decoration: underline;
+    color: rgb(220, 35, 192);
+}
+.contact-entreprise div{
+    display: flex;
+    margin-bottom: 10%;
+}
+.contact-entreprise i{
+    padding: 0 10px ;
+}
+.reseau-sociaux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reseau-sociaux span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.reseau-sociaux span:hover{
+    border: 1px dashed hsl(322, 100%, 66%);
+
+}
+.reseau-sociaux span:hover i{
+    scale: 1.3;
+    transition: all 1s ease-in-out;
+}
+.reseau-sociaux i{
+    font-size: 1.5em;
+}
+.reseau-sociaux span:first-child:hover i{
+    color: blue;
+}
+.reseau-sociaux span:nth-child(2):hover i{
+    color: black;
+}
+.reseau-sociaux span:last-child:hover i{
+    color: rgb(10, 233, 10);
+}
+.copy{
+    text-align: end;
+    padding: 2% 3%;
+    font-size: 0.8em;
+}
+@media (max-width:768px) {
+    /* first section */
+    h1{
+        font-size: 1.8em ;
+    }
+    h2{
+        font-size:  1.5em  ;
+    }
+    button{
+        font-size: 0.9em;
+    }
+    .flexible{
+        flex-direction: column;
+    }
+    .entete{
+        background: rgba(255, 192, 203, 0.2);
+        background-image: url(bg-hero-mobile.svg);
+    }
+    .entete header *{
+        width: 6rem;
+        margin: 5px auto;
+        padding: 8px 0px !important;
+    }
+    .entete header img{
+        width: 8rem;
+    }
+    .dashboard{
+        text-align: center;
+        /* à la recherche du reponse */
+        height: auto;
+    }
+    .dashboard div{
+        margin-top: 15%;
+    }
+    .mobileL{
+        display: none;
+    }
+    .dashboard div img{
+        width: 100%;
+    }
+    /* 2nd section */
+    .communaute > div > div{
+        font-size: 18px !important;
+        text-align: center;
+        margin: 3% 2%;
+    }
+    .communaute > div > div p{
+        width: 80%;
+        margin: 3% auto;
+    }
+    .flex-invers{
+        flex-direction: column-reverse;
+    }
+    .flex-flowing{
+        flex-direction: column;
+    }
+    .communaute img{
+        margin: auto;
+    }
+    /* footer */
+    footer{
+        padding-top: 20%;
+    }
+    footer,.copy{
+        text-align: center;
+    }
+    .info-entreprise{
+        flex-direction: column;
+        width: 90%;
+        margin: 20px  auto ;
+    }
+    .info-entreprise *{
+        margin: 15px;
+        justify-content: center;
+    }
+    .contact-entreprise div{
+        margin: 0;
+        align-items: center;
+    }
+    .contact-entreprise span,.contact-entreprise i{
+        margin: 5px 0 0;
+    }
+    .info-entreprise li{
+        margin-bottom: 5px;
+    }
+    .reseau-sociaux{
+        margin: 5px auto !important;
+    }
+}
+@media (max-width:1307px)  {
+    /* 1st section */
+    .dashboard div:first-child h1{
+        font-size: 2.3em;
+    }
+    .dashboard div:first-child p{
+        font-size: 1.3em;
+    }
+    .dashboard div button{
+        padding: 10px 30px;
+        font-size: 1rem;
+    }
+    .dashboard div:first-child *{
+        margin-top: 20px;
+    }
+    /* 2nd section */
+    .communaute > div > div{
+        font-size: 1.3rem;
+    }
+    /* 3eme section */
+    /* footer */
+    footer .flexible{
+        flex-direction: column;
+    }
+    .reseau-sociaux{
+        justify-content: start;
+        margin-left: 22%;
+    }
+    .info-entreprise *{
+        margin-bottom: 0;
+    }
+}
+@media (max-width:1959px) and  (min-width:1308px) {
+    .dashboard div:first-child h1{
+        font-size: 4em;
+    }
+}
