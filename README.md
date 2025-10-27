@@ -1,9 +1,6 @@
 # Huddle landing page
 
-
-## Spécification:
-
-
+## Expérience :
 
 
 ### HTML
