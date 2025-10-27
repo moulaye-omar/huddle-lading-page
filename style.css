@@ -176,7 +176,6 @@ footer .flexible > div{
 }
 .reseau-sociaux span:hover{
     border: 1px dashed hsl(322, 100%, 66%);
-
 }
 .reseau-sociaux span:hover i{
     scale: 1.3;
