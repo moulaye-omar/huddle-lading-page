@@ -5,6 +5,7 @@
 }
 body{
     font-size: 18px;
+  font-family: "Open Sans", sans-serif;
 }
 /* Prémière section Dashboard */
 .entete{
@@ -20,10 +21,12 @@ button{
 h1{
     font-size: 3em;
     font-weight: 600 ;
+  font-family: "Poppins", sans-serif;
 }
 h2{
     font-size:  2.2em ;
     font-weight: 600 ;
+  font-family: "Poppins", sans-serif;
 }
 .entete header{
     justify-content: space-between;
